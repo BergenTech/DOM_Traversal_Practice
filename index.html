@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Exercises</title>
+    <style>
+        .content, .overview {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .info {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        .family {
+            border: 2px dashed #ccc;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .member {
+            margin-top: 5px;
+        }
+        h1, h2 {
+            color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 id="app-title">My Task List</h1>
+        <input type="text" placeholder="Add new task...">
+        <ul id="tasks">
+            <li class="item">Task 1</li>
+            <li class="item">Task 2</li>
+            <li class="item">Task 3</li>
+            <li class="item">Task 4</li>
+        </ul>
+        <div class="info">Information Box</div>
+    </div>
+
+    <div class="overview">
+        <h2 id="summary">Project Overview</h2>
+        <p>Ensure all tasks are clearly listed and checked off upon completion.</p>
+        <p>Update the project as new tasks arise.</p>
+    </div>
+
+    <div class="family">
+        <div class="member">Member One</div>
+        <div class="member">Member Two</div>
+        <div class="member">Member Three</div>
+    </div>
+
+    <script src="log_practice.js"></script>
+    <script src="modifying_content.js"></script>
+</body>
+</html>
